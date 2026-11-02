@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "fabriciq": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "fabriciq_proxy.py"
+      ],
+      "env": {
+        "FABRICIQ_CLIENT_ID": "${FABRICIQ_CLIENT_ID:-}",
+        "FABRICIQ_TENANT": "${FABRICIQ_TENANT:-}",
+        "FABRICIQ_LOGIN_HINT": "${FABRICIQ_LOGIN_HINT:-}"
+      }
+    }
+  }
+}
